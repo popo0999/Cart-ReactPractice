@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 
 const Product = (props) => {
 	let [count, setCount] = useState(1);
-	const product = document.querySelector('.product');
 
 	return (
-		<div className="d-flex mt-5 align-items-center product">
+		<div className={`d-flex py-3 align-items-center product product${props.id}`}>
 			<div className="col-3">
-				<img src={`http://localhost:3000/${props.picName}`} className="w-100" alt="" />
+				<img
+					src={`http://localhost:3000/Cart-ReactPractice/images/${props.picName}`}
+					className="w-100"
+					alt=""
+				/>
 			</div>
 			<div className="col-3">{props.name}</div>
 			<div className="col-3">
@@ -40,7 +43,15 @@ const Product = (props) => {
 				<div className="price">{props.price}</div>
 			</div>
 			<div className="col-1">
-				<button onClick={() => {}}>
+				<button
+					onClick={() => {
+						let thisProduct = document.querySelector(`.product${props.id}`);
+						console.log(thisProduct);
+						props.setData(props.data - props.price);
+						props.setSum(props.sum - 1);
+						thisProduct.remove();
+					}}
+				>
 					<i className="fas fa-times"></i>
 				</button>
 			</div>

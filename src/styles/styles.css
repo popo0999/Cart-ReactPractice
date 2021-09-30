@@ -37,19 +37,24 @@
   color: #fff;
 }
 
-button {
+.product {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.product button {
   cursor: pointer;
   background-color: #fff;
   border: none;
 }
 
-.count {
+.product .count {
   font-size: 20px;
   color: orange;
   font-weight: bolder;
 }
 
-.price {
+.product .price {
   font-size: 20px;
   color: rosybrown;
   font-weight: bolder;
