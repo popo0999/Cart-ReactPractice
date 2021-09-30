@@ -7,7 +7,7 @@ const Product = (props) => {
 		<div className={`d-flex py-3 align-items-center product product${props.id}`}>
 			<div className="col-3">
 				<img
-					src={`http://localhost:3000/Cart-ReactPractice/images/${props.picName}`}
+					src={`https://raw.githubusercontent.com/popo0999/Cart-ReactPractice/main/public/images/${props.picName}`}
 					className="w-100"
 					alt=""
 				/>
@@ -47,8 +47,8 @@ const Product = (props) => {
 					onClick={() => {
 						let thisProduct = document.querySelector(`.product${props.id}`);
 						console.log(thisProduct);
-						props.setData(props.data - props.price);
-						props.setSum(props.sum - 1);
+						props.setData(props.data - props.price * count);
+						props.setSum(props.sum - count);
 						thisProduct.remove();
 					}}
 				>
