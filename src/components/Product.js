@@ -30,7 +30,6 @@ const Product = (props) => {
 				<span className="mx-3 count">{count}</span>
 				<button
 					onClick={() => {
-						console.log('plus', count);
 						setCount(count + 1);
 						props.setData(props.data + props.price);
 						props.setSum(props.sum + 1);
@@ -49,6 +48,7 @@ const Product = (props) => {
 						console.log(thisProduct);
 						props.setData(props.data - props.price * count);
 						props.setSum(props.sum - count);
+						props.setLength(props.length - 1);
 						thisProduct.remove();
 					}}
 				>

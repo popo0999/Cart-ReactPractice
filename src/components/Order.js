@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Product from './Product';
 const Order = (props) => {
-	const produts = [
+	const [length, setLength] = useState(3);
+	const products = [
 		{
 			id: 1,
 			name: 'New Balance shoes',
@@ -29,9 +30,9 @@ const Order = (props) => {
 		<div className="col-9">
 			<div className="title d-flex align-items-center mb-5">
 				<h1>訂購單</h1>
-				<p className="m-0">3種商品項目</p>
+				<p className="m-0">{length}種商品項目</p>
 			</div>
-			{produts.map((v, i) => {
+			{products.map((v, i) => {
 				return (
 					<Product
 						id={v.id}
@@ -42,6 +43,8 @@ const Order = (props) => {
 						setSum={setSum}
 						sum={sum}
 						picName={v.picName}
+						setLength={setLength}
+						length={length}
 					/>
 				);
 			})}
