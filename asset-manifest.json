@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Cart-ReactPractice/static/css/main.147761ad.chunk.css",
-    "main.js": "/Cart-ReactPractice/static/js/main.7470b97a.chunk.js",
-    "main.js.map": "/Cart-ReactPractice/static/js/main.7470b97a.chunk.js.map",
-    "runtime-main.js": "/Cart-ReactPractice/static/js/runtime-main.09ac4cda.js",
-    "runtime-main.js.map": "/Cart-ReactPractice/static/js/runtime-main.09ac4cda.js.map",
-    "static/js/2.e2871483.chunk.js": "/Cart-ReactPractice/static/js/2.e2871483.chunk.js",
-    "static/js/2.e2871483.chunk.js.map": "/Cart-ReactPractice/static/js/2.e2871483.chunk.js.map",
-    "index.html": "/Cart-ReactPractice/index.html",
-    "static/css/main.147761ad.chunk.css.map": "/Cart-ReactPractice/static/css/main.147761ad.chunk.css.map",
-    "static/js/2.e2871483.chunk.js.LICENSE.txt": "/Cart-ReactPractice/static/js/2.e2871483.chunk.js.LICENSE.txt"
+    "main.css": "/ReactPractice/static/css/main.05f66acc.chunk.css",
+    "main.js": "/ReactPractice/static/js/main.6def2605.chunk.js",
+    "main.js.map": "/ReactPractice/static/js/main.6def2605.chunk.js.map",
+    "runtime-main.js": "/ReactPractice/static/js/runtime-main.1dfc817c.js",
+    "runtime-main.js.map": "/ReactPractice/static/js/runtime-main.1dfc817c.js.map",
+    "static/js/2.25052ab8.chunk.js": "/ReactPractice/static/js/2.25052ab8.chunk.js",
+    "static/js/2.25052ab8.chunk.js.map": "/ReactPractice/static/js/2.25052ab8.chunk.js.map",
+    "index.html": "/ReactPractice/index.html",
+    "static/css/main.05f66acc.chunk.css.map": "/ReactPractice/static/css/main.05f66acc.chunk.css.map",
+    "static/js/2.25052ab8.chunk.js.LICENSE.txt": "/ReactPractice/static/js/2.25052ab8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.09ac4cda.js",
-    "static/js/2.e2871483.chunk.js",
-    "static/css/main.147761ad.chunk.css",
-    "static/js/main.7470b97a.chunk.js"
+    "static/js/runtime-main.1dfc817c.js",
+    "static/js/2.25052ab8.chunk.js",
+    "static/css/main.05f66acc.chunk.css",
+    "static/js/main.6def2605.chunk.js"
   ]
 }
