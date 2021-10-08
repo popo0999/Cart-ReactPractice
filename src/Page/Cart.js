@@ -1,4 +1,4 @@
-import '../styles/cart.css'
+// import '../styles/cart.css'
 import React, { useState } from 'react'
 import Order from '../components/cart/Order'
 import Summary from '../components/cart/Summary'
