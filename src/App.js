@@ -1,15 +1,24 @@
-import './styles/styles.css';
-import React, { useState } from 'react';
-import Order from './components/Order';
-import Summary from './components/Summary';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
+
+import React, { useState } from 'react'
+import Cart from './Page/Cart.js'
 function App() {
-	let [data, setData] = useState(12500);
-	let [sum, setSum] = useState(3);
 	return (
-		<div className="container d-flex mt-5 all">
-			<Order data={data} sum={sum} setData={setData} setSum={setSum} />
-			<Summary data={data} sum={sum} />
-		</div>
-	);
+		<Router>
+			<>
+				<Link to="/">Home</Link>
+				<Link to="/cart">Cart</Link>
+
+				<Switch>
+					<Route path="/about">
+						<Cart />
+					</Route>
+					<Route exact path="/">
+						{/* <Home /> */}
+					</Route>
+				</Switch>
+			</>
+		</Router>
+	)
 }
-export default App;
+export default App
