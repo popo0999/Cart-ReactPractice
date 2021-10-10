@@ -7,8 +7,8 @@ const Todo = () => {
 		<>
 			<div className="container">
 				<div className="row my-5">
-					<div className="col-2"></div>
-					<div className="col-8">
+					<div className="col"></div>
+					<div className="col-12 col-md-8">
 						<div className="todo p-5">
 							<h2>ToDo List</h2>
 							<p className="todoIntro">Get things done, one item at a time.</p>
@@ -24,6 +24,7 @@ const Todo = () => {
 									onChange={(e) => {
 										setAddItem(e.target.value)
 									}}
+									maxLength="30"
 								/>
 								<div
 									className="addBtn"
@@ -31,6 +32,7 @@ const Todo = () => {
 										let newArr = [...todoArray]
 										newArr.push({ name: addItem, check: false })
 										setTodoArray(newArr)
+										setAddItem('')
 									}}
 								>
 									ADD
@@ -38,7 +40,7 @@ const Todo = () => {
 							</div>
 						</div>
 					</div>
-					<div className="col-2"></div>
+					<div className="col"></div>
 				</div>
 			</div>
 		</>

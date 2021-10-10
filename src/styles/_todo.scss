@@ -1,43 +1,45 @@
 .todo {
-  width: 100%;
-  letter-spacing: 3px;
-  background-color: $secondary;
-  color: #fff;
-  .todoIntro {
-    font-size: 12px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 20px;
-  }
-  .listItem {
-    background-color: rgba(255, 255, 255, 0.3);
-    line-height: 100%;
-    p {
-      line-height: 100%;
-    }
-    .icon {
-      cursor: pointer;
-    }
-    .listName {
-      text-decoration: line-through;
-      color: rgba(255, 255, 255, 0.7);
-      transition: 1s;
-    }
-  }
-  .addItem {
-    padding: 10px;
-    height: 60px;
-    input {
-      width: 75%;
-      background-color: #fff;
-      border: transparent;
-    }
-    .addBtn {
-      cursor: pointer;
-      width: 25%;
-      text-align: center;
-      line-height: 40px;
-      background-color: $dark;
-    }
-  }
+	width: 100%;
+	letter-spacing: 3px;
+	background-color: $secondary;
+	color: #fff;
+	.todoIntro {
+		font-size: 12px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #fff;
+		margin-bottom: 20px;
+	}
+	.listItem {
+		background-color: rgba(255, 255, 255, 0.3);
+		line-height: 100%;
+		p {
+			max-width: 70%;
+			word-wrap: break-word;
+			line-height: 100%;
+		}
+		.icon {
+			cursor: pointer;
+		}
+		.listName {
+			text-decoration: line-through;
+			color: rgba(255, 255, 255, 0.7);
+			transition: 1s;
+		}
+	}
+	.addItem {
+		padding: 10px;
+		height: 60px;
+		input {
+			width: 75%;
+			background-color: #fff;
+			border: transparent;
+		}
+		.addBtn {
+			cursor: pointer;
+			width: 25%;
+			text-align: center;
+			line-height: 40px;
+			background-color: $dark;
+		}
+	}
 }

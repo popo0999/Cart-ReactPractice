@@ -1,0 +1,12 @@
+.adult {
+	.calcBtn {
+		margin-top: 10px;
+		text-align: center;
+		background-color: $primary;
+		cursor: pointer;
+		color: white;
+		&:hover {
+			background-color: #ccc;
+		}
+	}
+}
