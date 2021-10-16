@@ -25,6 +25,16 @@ const Todo = () => {
 										setAddItem(e.target.value)
 									}}
 									maxLength="30"
+									onKeyDown={(event) => {
+										const key = event.keyCode
+										console.log(key)
+										if (key === 13) {
+											let newArr = [...todoArray]
+											newArr.push({ name: addItem, check: false })
+											setTodoArray(newArr)
+											setAddItem('')
+										}
+									}}
 								/>
 								<div
 									className="addBtn"
